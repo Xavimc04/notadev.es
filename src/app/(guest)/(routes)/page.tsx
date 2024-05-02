@@ -12,10 +12,19 @@ export default function Page() {
             draggable="false"
         />
 
-        <div className="w-2/3 mt-20">
+        <div className="w-2/3 relative mt-32 bg-white px-10 overflow-visible">
             <h1 className="text-8xl py-10 font-bold w-1/2">
                 { APP_NAME }, { APP_DESCRIPTION }
             </h1>
+
+            {/* @ Top border */}
+            <div className="h-0 absolute z-30 overflow-visible top-0 w-[110%] -left-[5%] border border-dashed border-black"></div>
+        
+            {/* @ Right border */}
+            <div className="h-[120%] absolute z-30 overflow-visible w-0 left-0 -top-[10%] border border-dashed border-black"></div>
+
+            {/* @ Left border */}
+            <div className="h-[120%] absolute z-30 overflow-visible w-0 right-0 -top-[10%] border border-dashed border-black"></div>
         </div>
     </main>
 }
