@@ -14,7 +14,11 @@ export default function Navigator() {
         </section>
 
         <section className="w-1/3 text-end"> 
-            <Button color="warning" variant="bordered">
+            <Button
+                color="warning" 
+                variant="bordered"
+                className="rounded-md"
+            >
                 Acceder
             </Button>  
         </section>
