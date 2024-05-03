@@ -1,4 +1,4 @@
-import Icon from "../shared/icon";
+import Icon from "../icon";
 import { Button } from "@nextui-org/react";
 import SegmentOutlinedIcon from '@mui/icons-material/SegmentOutlined';
 
