@@ -8,17 +8,16 @@ export default function Navigator() {
             <Icon />
         
             <ul className="items-center gap-5 hidden lg:flex">
-                <li><a className="text-gray-400 hover:text-orange-500 transition-all" href="/">Servicios</a></li>
-                <li><a className="text-gray-400 hover:text-orange-500 transition-all" href="/">Clientes</a></li>
-                <li><a className="text-gray-400 hover:text-orange-500 transition-all" href="/">Equipo</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Servicios</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Clientes</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Equipo</a></li>
             </ul>
         </section>
 
         <section className="lg:w-1/3 text-end flex justify-end"> 
             <Button
-                color="warning" 
                 variant="bordered"
-                className="rounded-md hidden lg:flex"
+                className="rounded-md hidden lg:flex text-primary border-primary"
             >
                 Acceder
             </Button>  

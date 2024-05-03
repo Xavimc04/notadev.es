@@ -8,7 +8,7 @@ export default function Page() {
         <Navigator />
 
         {/* @ Waves wallpaper */}
-        <div className="hidden sm:flex fixed flex-col top-0 -z-10">
+        <div className="hidden sm:flex fixed flex-col top-0 -z-10 w-screen">
             <div className="h-48 md:h-60 lg:h-48 xl:h-48 block 2xl:h-32 bg-primary"></div>
           
             <img 
