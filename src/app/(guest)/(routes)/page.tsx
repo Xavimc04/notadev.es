@@ -14,6 +14,7 @@ export default function Page() {
             <img 
                 src="/assets/svg/waves.svg"
                 draggable="false"
+                className="select-none"
             />
         </div>
 
