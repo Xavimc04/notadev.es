@@ -25,7 +25,7 @@ export default function Page() {
                     { APP_NAME }, { APP_DESCRIPTION }
                 </h1>
 
-                <p>
+                <p className="text-center xl:text-left px-10 xl:px-0">
                     Ubicados en Barcelona, más de 4 años de experiencia y más de 100 proyectos completados con éxito. Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes. 
                 </p>
 
@@ -71,13 +71,13 @@ export default function Page() {
         </div>
 
         {/* @ Difference */}
-        <section className="w-2/3 mb-20 flex flex-col gap-16">
+        <section className="w-full xl:w-2/3 mb-20 flex flex-col gap-16">
             <div className="flex flex-col items-center gap-4"> 
-                <h2 className="font-extrabold py-2 w-1/2 text-center text-6xl overflow-hidden">
+                <h2 className="font-extrabold py-2 w-[80%] lg:w-1/2 text-center text-6xl overflow-hidden">
                     ¿En que nos diferenciamos?
                 </h2>
 
-                <p className="text-xl w-1/2 text-center">
+                <p className="text-xl w-[80%] md:w-1/2 text-center">
                     Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes.
                 </p>
             </div>
