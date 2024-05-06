@@ -73,7 +73,7 @@ export default function Page() {
         {/* @ Difference */}
         <section className="w-full xl:w-2/3 mb-20 flex flex-col gap-16">
             <div className="flex flex-col items-center gap-4"> 
-                <h2 className="font-extrabold py-2 w-[80%] lg:w-1/2 text-center text-6xl overflow-hidden">
+                <h2 className="font-extrabold py-2 w-[80%] lg:w-1/2 text-center text-4xl lg:text-6xl overflow-hidden">
                     ¿En que nos diferenciamos?
                 </h2>
 
@@ -87,26 +87,26 @@ export default function Page() {
         </section>
 
         {/* @ Contact button */}
-        <section className="w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-7 py-10 mb-20">
-            <h2 className="font-extrabold text-5xl w-full py-2 text-center overflow-hidden">
+        <section className="w-[80%] lg:w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-7 py-10 mb-20">
+            <h2 className="font-extrabold text-4xl lg:text-5xl w-2/3 lg:w-full py-2 text-center overflow-hidden">
                 ¿Aún tienes dudas?
             </h2>
 
-            <p className="w-2/3 text-center">
-                Entendemos que tomar la decisión adecuada puede ser difícil. Estamos aquí para ayudarte a aclarar cualquier pregunta o inquietud que puedas tener. ¡Déjanos tu correo y nos pondremos en contacto contigo lo más pronto posible! Nuestro equipo está comprometido en brindarte la información que necesitas para tomar la mejor decisión para tus proyectos de desarrollo. ¡No dudes en contactarnos!
+            <p className="lg:w-2/3 text-center px-10 lg:px-0 text-lg">
+                Entendemos que tomar la decisión adecuada puede ser difícil. Estamos aquí para ayudarte a aclarar cualquier pregunta o inquietud que puedas tener. ¡Déjanos tu correo y nos pondremos en contacto contigo lo más pronto posible!
             </p>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 w-[80%] md:w-auto">
                 <input 
                     type="email"
                     placeholder="Correo electrónico"
-                    className="py-3 px-4 border rounded-lg w-80 focus:outline-none focus:border-transparent"
+                    className="py-3 px-4 border rounded-lg flex-1 md:flex-none md:w-80 focus:outline-none focus:border-transparent"
                 />
 
                 <Button
                     size="lg"
                     isIconOnly
-                    className="rounded-md bg-indigo-500 text-white flex items-center"
+                    className="rounded-md bg-green-500 text-white flex items-center"
                 >
                     <MarkEmailUnreadOutlinedIcon />
                 </Button>
