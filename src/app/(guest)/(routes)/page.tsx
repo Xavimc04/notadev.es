@@ -2,6 +2,7 @@ import Navigator from "@/components/guest/navigator";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import { Button } from "@nextui-org/react";
 import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
+import Differences from "@/components/layouts/landing/differences";
 
 export default function Page() {
     return <main className="flex flex-col items-center">
@@ -18,13 +19,17 @@ export default function Page() {
             />
         </div>
 
-        <div className="w-full sm:w-[80%] 2xl:w-2/3 mb-32 relative mt-20 md:mt-32 bg-white md:px-10 overflow-visible flex justify-between">
+        <div className="w-full sm:w-[80%] 2xl:w-2/3 mb-32 relative mt-20 md:mt-32 bg-white md:px-10 overflow-visible items-center flex justify-between">
             <section className="w-full xl:w-1/2 flex flex-col items-center xl:items-start gap-5">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl py-10 font-bold text-center xl:text-left break-keep">
                     { APP_NAME }, { APP_DESCRIPTION }
                 </h1>
 
-                <div className="flex -space-x-4 rtl:space-x-reverse">
+                <p>
+                    Ubicados en Barcelona, más de 4 años de experiencia y más de 100 proyectos completados con éxito. Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes. 
+                </p>
+
+                <div className="flex -space-x-4 rtl:space-x-reverse mt-5">
                     <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
                     <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
                     <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
@@ -32,12 +37,21 @@ export default function Page() {
                     <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                 </div>
 
-                <Button
-                    size="lg"
-                    className="rounded-md bg-green-500 text-white flex items-center mt-5"
-                >
-                    Contactar ahora
-                </Button>  
+                <div className="flex items-center gap-4">
+                    <Button
+                        size="lg"
+                        className="rounded-md bg-green-500 text-white flex items-center mt-5"
+                    >
+                        Contactar ahora
+                    </Button> 
+
+                    <Button
+                        size="lg"
+                        className="rounded-md border-2 border-gray-400 bg-transparent text-gray-400 flex items-center mt-5"
+                    >
+                        Ver más
+                    </Button> 
+                </div> 
             </section>
 
             <img 
@@ -56,8 +70,24 @@ export default function Page() {
             <div className="hidden md:block h-[120%] absolute z-30 overflow-visible w-0 right-0 -top-[10%] border border-dashed border-black"></div>
         </div>
 
+        {/* @ Difference */}
+        <section className="w-2/3 mb-20 flex flex-col gap-16">
+            <div className="flex flex-col items-center gap-4"> 
+                <h2 className="font-extrabold py-2 w-1/2 text-center text-6xl overflow-hidden">
+                    ¿En que nos diferenciamos?
+                </h2>
+
+                <p className="text-xl w-1/2 text-center">
+                    Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes.
+                </p>
+            </div>
+
+            {/* @ Steps */}
+            <Differences />
+        </section>
+
         {/* @ Contact button */}
-        <section className="w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-7 py-10">
+        <section className="w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-7 py-10 mb-20">
             <h2 className="font-extrabold text-5xl w-full py-2 text-center overflow-hidden">
                 ¿Aún tienes dudas?
             </h2>
