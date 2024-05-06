@@ -6,13 +6,16 @@ export default function Icon({
 } : {
     color?: string
 }) {
-    return <h1 className="text-4xl font-bold flex items-center gap-2">
+    return <h1 className="text-4xl font-bold flex items-center gap-2 overflow-y-hidden">
         <BoltOutlinedIcon 
             className={ color || 'text-primary' }
             fontSize="large"
         />
 
-        <a href="/">
+        <a 
+            href="/"
+            className="overflow-y-hidden"
+        >
             { APP_NAME }
         </a>
     </h1>

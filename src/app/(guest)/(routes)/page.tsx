@@ -1,8 +1,7 @@
 import Navigator from "@/components/guest/navigator";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import { Button } from "@nextui-org/react";
-import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
-import Footer from "@/components/guest/footer";
+import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
 
 export default function Page() {
     return <main className="flex flex-col items-center">
@@ -25,12 +24,18 @@ export default function Page() {
                     { APP_NAME }, { APP_DESCRIPTION }
                 </h1>
 
+                <div className="flex -space-x-4 rtl:space-x-reverse">
+                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
+                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
+                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
+                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
+                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                </div>
+
                 <Button
                     size="lg"
-                    className="rounded-md bg-purple-600 text-white flex items-center"
+                    className="rounded-md bg-green-500 text-white flex items-center mt-5"
                 >
-                    <AlternateEmailOutlinedIcon />
-
                     Contactar ahora
                 </Button>  
             </section>
@@ -51,6 +56,33 @@ export default function Page() {
             <div className="hidden md:block h-[120%] absolute z-30 overflow-visible w-0 right-0 -top-[10%] border border-dashed border-black"></div>
         </div>
 
-        <Footer />
+        {/* @ Contact button */}
+        <section className="w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-7 py-10">
+            <h2 className="font-extrabold text-5xl w-full py-2 text-center overflow-hidden">
+                ¿Aún tienes dudas?
+            </h2>
+
+            <p className="w-2/3 text-center">
+                Entendemos que tomar la decisión adecuada puede ser difícil. Estamos aquí para ayudarte a aclarar cualquier pregunta o inquietud que puedas tener. ¡Déjanos tu correo y nos pondremos en contacto contigo lo más pronto posible! Nuestro equipo está comprometido en brindarte la información que necesitas para tomar la mejor decisión para tus proyectos de desarrollo. ¡No dudes en contactarnos!
+            </p>
+
+            <div className="flex items-center gap-3">
+                <input 
+                    type="email"
+                    placeholder="Correo electrónico"
+                    className="py-3 px-4 border rounded-lg w-80 focus:outline-none focus:border-transparent"
+                />
+
+                <Button
+                    size="lg"
+                    isIconOnly
+                    className="rounded-md bg-indigo-500 text-white flex items-center"
+                >
+                    <MarkEmailUnreadOutlinedIcon />
+                </Button>
+            </div>
+
+            <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#fff_30%,#ffb500_100%)]"></div>
+        </section>
     </main>
 }
