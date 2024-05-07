@@ -13,9 +13,9 @@ export default function Articles() {
             if (width <= 768) {
                 handleAmount(2);
             } else if (width <= 1024) {
-                handleAmount(8);
+                handleAmount(4);
             } else {
-                handleAmount(12);
+                handleAmount(8);
             }
         }
 
