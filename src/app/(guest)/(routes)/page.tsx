@@ -3,6 +3,7 @@ import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import { Button } from "@nextui-org/react";
 import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
 import Differences from "@/components/layouts/landing/differences";
+import Articles from "@/components/layouts/landing/articles";
 
 export default function Page() {
     return <main className="flex flex-col items-center">
@@ -84,6 +85,20 @@ export default function Page() {
 
             {/* @ Steps */}
             <Differences />
+        </section>
+
+        {/* @ Visit out blog */}
+        <section className="w-full xl:w-2/3 mb-20 flex flex-col gap-5 items-center relative">
+            <h4 className="bg-red-500/30 px-5 py-2 text-sm rounded-full border border-red-500 text-red-500">
+                📌 Visita nuestro blog 📌
+            </h4>
+
+            <h2 className="font-extrabold py-2 w-[80%] lg:w-1/2 text-center text-4xl lg:text-6xl overflow-hidden">
+                Artículos recientes
+            </h2>
+
+            {/* @ Last articles */}
+            <Articles />
         </section>
 
         {/* @ Contact button */}

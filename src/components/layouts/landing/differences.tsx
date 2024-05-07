@@ -33,7 +33,7 @@ export default function Differences() {
         }
     ]
 
-    return <div className="p-3 flex-wrap lg:flex-nowrap lg:flex-1 flex justify-center lg:justify-between gap-5">
+    return <div className="flex-wrap lg:flex-nowrap lg:flex-1 flex justify-center p-5 lg:justify-between gap-5">
         {
             differences.map((difference, index) => {
                 return <Difference 
@@ -60,7 +60,7 @@ function Difference({
     bg?: string
 }) {
     return <Card
-        className="w-[80%] md:w-[40%] lg:w-1/3 xl:w-1/4 p-3" 
+        className="w-[80%] md:w-[40%] lg:w-1/3 xl:w-1/4" 
     >
         <CardHeader className="flex gap-3">
             <div className={ cn("h-10 w-10 rounded flex items-center justify-center text-white", bg || 'bg-primary') }>
