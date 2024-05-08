@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/react";
 import Differences from "@/components/layouts/landing/differences";
 import Articles from "@/components/layouts/landing/articles";
 import Newsletter from "@/components/layouts/landing/newsletter";
+import Services from "@/components/layouts/landing/services";
 
 export default function Page() {
     return <main className="flex flex-col items-center">
@@ -85,6 +86,30 @@ export default function Page() {
 
             {/* @ Steps */}
             <Differences />
+        </section>
+
+        {/* @ Services we provide */}
+        <section className="w-full bg-gray-100/80 relative mb-48 py-32 overflow-visible flex-wrap flex items-center justify-center gap-20">
+            {/* @ Section image */}
+            <div className="relative overflow-visible h-full w-1/3"> 
+                <img
+                    src="https://cdn.icon-icons.com/icons2/2562/PNG/512/ui_ux_web_design_multidevice_responsive_layout_icon_153182.png"
+                    className="h-[500px]"
+                />
+            </div>
+
+            {/* @ Services */}
+            <div className="w-1/4 h-full flex flex-col gap-3 justify-center">
+                <h2 className="text-5xl py-2 font-extrabold">
+                    Servicios que ofrecemos
+                </h2>
+
+                <p className="text-lg">
+                    Profesionales en lo nuestro, ofrecemos una amplia gama de servicios de desarrollo de software y diseño web.
+                </p>
+
+                <Services />
+            </div>
         </section>
 
         {/* @ Visit out blog */}

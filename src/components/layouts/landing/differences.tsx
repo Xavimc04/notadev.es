@@ -67,7 +67,7 @@ function Difference({
                 { icon }
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col font-extralight">
                 <p className="text-md">{ title }</p>
             </div>
         </CardHeader>
