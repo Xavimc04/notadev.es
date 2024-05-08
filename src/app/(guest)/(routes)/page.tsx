@@ -101,14 +101,14 @@ export default function Page() {
             <Articles />
         </section>
 
-        {/* @ Contact button */}
+        {/* @ Newsletter */}
         <section className="w-[80%] lg:w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-7 py-10 mb-20">
             <h2 className="font-extrabold text-4xl lg:text-5xl w-2/3 lg:w-full py-2 text-center overflow-hidden">
-                ¿Aún tienes dudas?
+                ¡Suscríbete a nuestro newsletter!
             </h2>
 
             <p className="lg:w-2/3 text-center px-10 lg:px-0 text-lg">
-                Entendemos que tomar la decisión adecuada puede ser difícil. Estamos aquí para ayudarte a aclarar cualquier pregunta o inquietud que puedas tener. ¡Déjanos tu correo y nos pondremos en contacto contigo lo más pronto posible!
+                Recibe las últimas noticias y actualizaciones de nuestro equipo. 
             </p>
 
             <div className="flex items-center gap-3 w-[80%] md:w-auto">

@@ -9,8 +9,10 @@ export default function Navigator() {
         
             <ul className="items-center gap-5 hidden lg:flex">
                 <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Servicios</a></li>
-                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Clientes</a></li>
-                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Equipo</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Galería</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Blog</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Nosotros</a></li>
+                <li><a className="text-gray-400 hover:text-primary transition-all" href="/">Contacto</a></li>
             </ul>
         </section>
 
