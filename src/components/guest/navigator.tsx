@@ -3,8 +3,8 @@ import { Button } from "@nextui-org/react";
 import SegmentOutlinedIcon from '@mui/icons-material/SegmentOutlined';
 
 export default function Navigator() {
-    return <nav className="w-screen border-b flex justify-center items-center py-5 text-md bg-white px-5 lg:px-0">
-        <section className="flex items-center gap-10 flex-1 lg:flex-none lg:w-1/2 xl:w-1/3">
+    return <nav className="w-screen border-b flex items-center py-5 text-md bg-white justify-center px-5 2xl:px-0">
+        <section className="flex items-center gap-10 flex-1 xl:flex-none xl:w-1/2 2xl:w-1/3">
             <Icon />
         
             <ul className="items-center gap-5 hidden lg:flex">
@@ -16,7 +16,7 @@ export default function Navigator() {
             </ul>
         </section>
 
-        <section className="lg:w-1/3 text-end flex justify-end"> 
+        <section className="text-end flex justify-end xl:w-1/2 2xl:w-1/3"> 
             <Button
                 variant="bordered"
                 className="rounded-md hidden lg:flex text-primary border-primary"
