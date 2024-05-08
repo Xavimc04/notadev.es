@@ -21,7 +21,7 @@ export default function Page() {
             />
         </div>
 
-        <div className="w-full sm:w-[80%] 2xl:w-2/3 mb-32 relative mt-20 md:mt-32 bg-white md:px-10 overflow-visible items-center flex justify-between">
+        <div className="w-full sm:w-[80%] 2xl:w-2/3 mb-60 relative mt-20 md:mt-32 bg-white md:px-10 overflow-visible items-center flex justify-between">
             <section className="w-full xl:w-1/2 flex flex-col items-center xl:items-start gap-5">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl py-10 font-bold text-center xl:text-left break-keep">
                     { APP_NAME }, { APP_DESCRIPTION }
@@ -30,14 +30,6 @@ export default function Page() {
                 <p className="text-center xl:text-left px-10 xl:px-0">
                     Ubicados en Barcelona, más de 4 años de experiencia y más de 100 proyectos completados con éxito. Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes. 
                 </p>
-
-                <div className="flex -space-x-4 rtl:space-x-reverse mt-5">
-                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
-                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
-                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
-                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="" />
-                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                </div>
 
                 <div className="flex items-center gap-4">
                     <Button
