@@ -89,12 +89,16 @@ export default function Page() {
         </section>
 
         {/* @ Services we provide */}
-        <section className="w-full bg-gray-100/80 relative mb-48 py-32 overflow-visible flex-wrap flex items-center justify-center gap-20">
+        <section className="w-full bg-gray-100/60 relative mb-20 py-32 overflow-visible flex items-center justify-center gap-20">
+            {/* @ Grid background */}
+            <div className="absolute bottom-0 opacity-30 z-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+
             {/* @ Section image */}
             <div className="relative overflow-visible h-full w-1/3"> 
                 <img
                     src="https://cdn.icon-icons.com/icons2/2562/PNG/512/ui_ux_web_design_multidevice_responsive_layout_icon_153182.png"
                     className="h-[500px]"
+                    draggable="false"
                 />
             </div>
 

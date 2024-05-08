@@ -11,7 +11,7 @@ export default function Services() {
         {
             icon: <PhonelinkOutlinedIcon />,
             title: "Desarrollo web",
-            color: "bg-primary",
+            color: "bg-indigo-400",
         },
         {
             icon: <SupportAgentOutlinedIcon />,
