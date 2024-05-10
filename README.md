@@ -48,7 +48,7 @@ npm run dev
 - Mapa del sitio
 - Formulario de contacto
 - Suscripciones a newsletter
-- Desarrolladores o publicar mi web en algún sitio
+- Desarrolladores o publicar mi web en algún sitio (xaviermorell.es)
 
 ## Developer
 
