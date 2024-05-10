@@ -3,9 +3,8 @@ import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import { Button } from "@nextui-org/react";
 import Differences from "@/components/layouts/landing/differences";
 import Articles from "@/components/layouts/landing/articles";
-import Newsletter from "@/components/layouts/landing/newsletter";
 import Services from "@/components/layouts/landing/services";
-import Footer from "@/components/layouts/landing/footer";
+import Footer from "@/components/guest/footer";
 
 export default function Page() {
     return <main className="flex flex-col items-center">
@@ -121,21 +120,6 @@ export default function Page() {
 
             {/* @ Last articles */}
             <Articles />
-        </section>
-
-        {/* @ Newsletter */}
-        <section className="w-[80%] lg:w-2/3 border border-primary relative rounded-lg flex flex-col items-center gap-5 py-10 mb-20">
-            <h2 className="font-extrabold text-4xl lg:text-5xl w-2/3 lg:w-full py-2 text-center overflow-hidden">
-                ¡Suscríbete a nuestro newsletter!
-            </h2>
-
-            <p className="lg:w-2/3 text-center px-10 lg:px-0 text-lg">
-                Obtén consejos, tutoriales y recursos exclusivos directamente en tu bandeja de entrada. Únete a nuestra comunidad de apasionados por el desarrollo web y potencia tus habilidades. ¡No te pierdas nada en { APP_NAME }!
-            </p>
-
-            <Newsletter />
-
-            <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#fff_30%,#ffb500_100%)]"></div>
         </section>
 
         <Footer />

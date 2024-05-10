@@ -38,6 +38,7 @@ npm run dev
 
 ## Tareas pendientes
 
+- Sticky navigator
 - Animaciones dentro del sitio
 - Funcionamiento enlaces cabecera
 - Funcionamiento enlaces footer

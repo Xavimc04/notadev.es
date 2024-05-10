@@ -1,5 +1,5 @@
 import { APP_NAME } from "@/lib/constants";
-import { services } from "./services";
+import { services } from "../layouts/landing/services";
 import { Service } from "@/_types";
 
 export default function Footer() {
