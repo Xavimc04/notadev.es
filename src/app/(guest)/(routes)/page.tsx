@@ -5,6 +5,7 @@ import Differences from "@/components/layouts/landing/differences";
 import Articles from "@/components/layouts/landing/articles";
 import Newsletter from "@/components/layouts/landing/newsletter";
 import Services from "@/components/layouts/landing/services";
+import Footer from "@/components/layouts/landing/footer";
 
 export default function Page() {
     return <main className="flex flex-col items-center">
@@ -136,5 +137,7 @@ export default function Page() {
 
             <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#fff_30%,#ffb500_100%)]"></div>
         </section>
+
+        <Footer />
     </main>
 }

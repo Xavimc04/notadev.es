@@ -36,6 +36,19 @@ npm install
 npm run dev
 ```
 
+## Tareas pendientes
+
+- Animaciones dentro del sitio
+- Funcionamiento enlaces cabecera
+- Funcionamiento enlaces footer
+- Políticas
+- Términos de uso
+- Cookies
+- Mapa del sitio
+- Formulario de contacto
+- Suscripciones a newsletter
+- Desarrolladores o publicar mi web en algún sitio
+
 ## Developer
 
 Xavier Morell - https://xaviermorell.es
