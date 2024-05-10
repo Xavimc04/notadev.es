@@ -3,11 +3,11 @@ import { services } from "../layouts/landing/services";
 import { Service } from "@/_types";
 
 export default function Footer() {
-    return <footer className="w-full flex flex-col">
+    return <footer className="w-full flex flex-col border-t">
         {/* @ Page links */}
-        <div className="border-t py-10 flex justify-center gap-3">
+        <div className="py-10 flex justify-center self-center flex-col md:flex-row w-[90%] sm:w-[50%] lg:w-2/3 xl:w-full gap-5 md:gap-0 xl:gap-3 flex-wrap">
             {/* @ Page icon and description */}
-            <section className="w-72 mr-32 flex flex-col gap-3">
+            <section className="xl:mr-32 p-4 flex flex-col gap-3 w-full md:w-1/2 xl:w-72">
                 <img 
                     src="/assets/wevvi-large.png"
                     className="w-32"
@@ -19,7 +19,7 @@ export default function Footer() {
             </section>
 
             {/* @ Services */}
-            <section className="flex flex-col gap-5 w-1/6">
+            <section className="p-4 flex flex-col gap-5 w-full md:w-1/2 xl:w-1/6">
                 <h3 className="text-2xl uppercase font-extrabold">
                     Servicios
                 </h3>
@@ -37,7 +37,7 @@ export default function Footer() {
             </section>
 
             {/* @ Policies */}
-            <section className="flex flex-col gap-5 w-1/6">
+            <section className="p-4 flex flex-col gap-5 w-full md:w-1/2 xl:w-1/6">
                 <h3 className="text-2xl uppercase font-extrabold">
                     Políticas
                 </h3>
@@ -50,7 +50,7 @@ export default function Footer() {
             </section>
 
             {/* @ Sitemap */}
-            <section className="flex flex-col gap-5 w-1/6">
+            <section className="p-4 flex flex-col gap-5 w-full md:w-1/2 xl:w-1/6">
                 <h3 className="text-2xl uppercase font-extrabold">
                     Nuestras redes
                 </h3>
