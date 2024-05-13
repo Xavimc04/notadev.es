@@ -1,4 +1,4 @@
-import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
+import { APP_DESCRIPTION, APP_NAME, ROUTING_PATHS } from "@/lib/constants";
 import { Button } from "@nextui-org/react";
 import Differences from "@/components/layouts/landing/differences";
 import Articles from "@/components/layouts/landing/articles";
@@ -32,7 +32,9 @@ export default function Page() {
                         size="lg"
                         className="rounded-md bg-green-500 text-white flex items-center mt-5"
                     >
-                        Contactar ahora
+                        <a href={ ROUTING_PATHS.CONTACT.path }>
+                            Contactar ahora
+                        </a>
                     </Button> 
 
                     <Button
@@ -91,7 +93,7 @@ export default function Page() {
             </div>
 
             {/* @ Services */}
-            <div className="w-[80%] md:w-1/2 2xl:w-1/4 h-full flex flex-col gap-3 justify-center">
+            <div id="services" className="w-[80%] md:w-1/2 2xl:w-1/4 h-full flex flex-col gap-3 justify-center">
                 <h2 className="text-5xl py-2 font-extrabold">
                     Servicios que ofrecemos
                 </h2>

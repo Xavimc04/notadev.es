@@ -7,8 +7,11 @@ import { useFormState } from "react-dom";
 export default function Contact() {
     const [state, dispatch] = useFormState(SendEmail, undefined); 
 
-    return <div className="flex justify-center relative overflow-hidden">
-        <section className="w-[80%] md:w-1/2 lg:w-1/3 flex flex-col mb-5 md:mb-20 bg-white p-10 rounded border-primary gap-3 border">
+    return <div 
+        className="flex justify-center relative overflow-hidden"
+        id="contact-us"
+    >
+        <section className="w-full md:w-1/2 xl:w-1/3 flex flex-col md:mb-20 bg-white p-10 rounded border-primary gap-3 md:border">
             <h2 className="text-2xl md:text-5xl py-2 font-extrabold">
                 Contáctanos
             </h2>
@@ -53,7 +56,7 @@ export default function Contact() {
         </section>
 
         {/* @ Waves wallpaper */}
-        <div className="absolute bottom-0 xl:-bottom-32 -z-10">
+        <div className="absolute opacity-0 md:opacity-100 bottom-0 xl:-bottom-32 -z-10">
             <img 
                 src="/assets/svg/waves.svg"
                 draggable="false"

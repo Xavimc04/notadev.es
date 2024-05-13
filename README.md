@@ -49,7 +49,6 @@ npm run dev
 - Cookies
 - Suscripciones a newsletter
 - Desarrolladores o publicar mi web en algún sitio (xaviermorell.es)
-- Website analytics from Vercel
 
 ## Developer
 
