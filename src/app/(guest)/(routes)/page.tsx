@@ -32,16 +32,9 @@ export default function Page() {
                         size="lg"
                         className="rounded-md bg-green-500 text-white flex items-center mt-5"
                     >
-                        <a href={ ROUTING_PATHS.CONTACT.path }>
+                        <a href={ `#${ ROUTING_PATHS.CONTACT.path }` }>
                             Contactar ahora
                         </a>
-                    </Button> 
-
-                    <Button
-                        size="lg"
-                        className="rounded-md border-2 border-gray-400 bg-transparent text-gray-400 flex items-center mt-5"
-                    >
-                        Ver más
                     </Button> 
                 </div> 
             </section>
