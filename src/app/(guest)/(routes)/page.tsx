@@ -1,15 +1,11 @@
-import Navigator from "@/components/guest/navigator";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import { Button } from "@nextui-org/react";
 import Differences from "@/components/layouts/landing/differences";
 import Articles from "@/components/layouts/landing/articles";
 import Services from "@/components/layouts/landing/services";
-import Footer from "@/components/guest/footer";
 
 export default function Page() {
     return <main className="flex flex-col items-center">
-        <Navigator />
-
         {/* @ Waves wallpaper */}
         <div className="hidden sm:flex absolute flex-col top-0 -z-10 w-screen">
             <div className="h-48 md:h-60 lg:h-48 xl:h-48 block 2xl:h-32 bg-primary"></div>
@@ -27,8 +23,8 @@ export default function Page() {
                     { APP_NAME }, { APP_DESCRIPTION }
                 </h1>
 
-                <p className="text-center xl:text-left px-10 xl:px-0">
-                    Ubicados en Barcelona, más de 4 años de experiencia y más de 100 proyectos completados con éxito. Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes. 
+                <p className="text-center xl:text-left px-10 xl:px-0 xl:pr-16">
+                    Nuestro equipo de expertos en desarrollo de software está comprometido en brindar soluciones innovadoras y de alta calidad para nuestros clientes. 
                 </p>
 
                 <div className="flex items-center gap-4">
@@ -121,7 +117,5 @@ export default function Page() {
             {/* @ Last articles */}
             <Articles />
         </section>
-
-        <Footer />
     </main>
 }
