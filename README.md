@@ -30,7 +30,9 @@ cd website
 npm install
 ```
 
-4. Run development server
+4. Setup your .env file
+
+5. Run development server
 
 ```bash
 npm run dev
@@ -45,8 +47,6 @@ npm run dev
 - Políticas
 - Términos de uso
 - Cookies
-- Mapa del sitio
-- Formulario de contacto
 - Suscripciones a newsletter
 - Desarrolladores o publicar mi web en algún sitio (xaviermorell.es)
 - Website analytics from Vercel
