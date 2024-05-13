@@ -53,10 +53,16 @@ export default function Footer() {
             {/* @ Sitemap */}
             <section className="p-4 flex flex-col gap-5 w-full md:w-1/2 xl:w-1/6">
                 <h3 className="text-2xl uppercase font-extrabold">
-                    Nuestras redes
+                    Contáctanos
                 </h3>
 
                 <ul className="flex flex-col gap-3">
+                    <li className="text-md font-extralight hover:text-primary">
+                        <a href="mailto:info@wevvi.es">
+                            Correo electrónico
+                        </a>
+                    </li>
+                    
                     <li className="text-md font-extralight hover:text-primary">
                         <a href="https://www.instagram.com/wevvi.es" target="_blank">
                             Instagram
