@@ -15,7 +15,7 @@ export default function Navigator() {
                     Object.entries(ROUTING_PATHS).map(([path, value]) => (
                         <li key={ value.path }>
                             <a 
-                                href={ value.path } 
+                                href={ `#${ value.path }` } 
                                 className="text-gray-400 hover:text-primary transition-all"
                             >
                                 { value.name }
@@ -46,7 +46,7 @@ export default function Navigator() {
                                 key={ value.path } 
                                 color="primary"
                             >
-                                <a href={ value.path }>
+                                <a href={ `#${ value.path }` }>
                                     { value.name }
                                 </a>
                             </DropdownItem>

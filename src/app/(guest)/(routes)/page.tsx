@@ -93,7 +93,7 @@ export default function Page() {
             </div>
 
             {/* @ Services */}
-            <div id="services" className="w-[80%] md:w-1/2 2xl:w-1/4 h-full flex flex-col gap-3 justify-center">
+            <div id={ ROUTING_PATHS.SERVICES.path } className="w-[80%] md:w-1/2 2xl:w-1/4 h-full flex flex-col gap-3 justify-center">
                 <h2 className="text-5xl py-2 font-extrabold">
                     Servicios que ofrecemos
                 </h2>

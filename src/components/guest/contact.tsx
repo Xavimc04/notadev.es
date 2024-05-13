@@ -1,5 +1,6 @@
 "use client"
 
+import { ROUTING_PATHS } from "@/lib/constants";
 import { SendEmail } from "@/lib/data";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import { useFormState } from "react-dom";
@@ -9,7 +10,7 @@ export default function Contact() {
 
     return <div 
         className="flex justify-center relative overflow-hidden"
-        id="contact-us"
+        id={ ROUTING_PATHS.CONTACT.path }
     >
         <section className="w-full md:w-1/2 xl:w-1/3 flex flex-col md:mb-20 bg-white p-10 rounded border-primary gap-3 md:border">
             <h2 className="text-2xl md:text-5xl py-2 font-extrabold">

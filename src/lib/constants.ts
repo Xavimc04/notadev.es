@@ -5,11 +5,11 @@ export const MAIL_FROM = "info@wevvi.es"
 
 export const ROUTING_PATHS = {
     CONTACT: {
-        path: "/contact",
-        name: "Contacto"
+        path: "contactanos",
+        name: "Contáctanos"
     },
     SERVICES: {
-        path: "/services",
+        path: "nuestros-servicios",
         name: "Servicios"
     },
 }
