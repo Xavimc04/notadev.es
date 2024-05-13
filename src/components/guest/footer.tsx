@@ -11,10 +11,11 @@ export default function Footer() {
                 <img 
                     src="/assets/wevvi-large.png"
                     className="w-32"
+                    draggable={ false }
                 />
 
                 <p className="text-md mt-2">
-                    { APP_NAME } es una empresa de desarrollo de software ubicada en Barcelona, España. 
+                    Experiencia, compromiso, calidad y profesionalidad. Eso es lo que prometemos en <span className="font-bold text-primary">{ APP_NAME }</span>.
                 </p>
             </section>
 
